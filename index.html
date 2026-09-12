@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Assistant | Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="ri-book-open-line"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>StudyMate</h2>
+                <span>Study Assistant</span>
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+
+            <a href="index.html" class="nav-item active">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="assistant.html" class="nav-item">
+                <i class="ri-sparkling-2-line"></i>
+                <span>Study Assistant</span>
+            </a>
+
+            <a href="quiz.html" class="nav-item">
+                <i class="ri-questionnaire-line"></i>
+                <span>Quiz</span>
+            </a>
+
+            <a href="tasks.html" class="nav-item">
+                <i class="ri-task-line"></i>
+                <span>Tasks</span>
+            </a>
+
+            <a href="notes.html" class="nav-item">
+                <i class="ri-sticky-note-line"></i>
+                <span>Notes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <i class="ri-bar-chart-box-line"></i>
+                <span>Progress</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="user-card">
+
+                <div class="user-avatar">A</div>
+
+                <div>
+                    <strong>Student</strong>
+                    <small>Keep learning 🚀</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <p class="small-heading">Ready to continue your learning?</p>
+                <h1>Welcome back, Student!</h1>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-button">
+                    <i class="ri-notification-3-line"></i>
+                </button>
+
+                <div class="profile-circle">A</div>
+
+            </div>
+
+        </header>
+
+
+        <section class="dashboard">
+
+            <!-- HERO -->
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <span class="ai-label">
+                        <i class="ri-sparkling-2-line"></i>
+                        YOUR STUDY COMPANION
+                    </span>
+
+                    <h2>Learn smarter.<br>Study better.</h2>
+
+                    <p>
+                        Organize your studies, practice quizzes,
+                        manage tasks and track your learning progress.
+                    </p>
+
+                    <a href="assistant.html" class="primary-button">
+                        <i class="ri-chat-3-line"></i>
+                        Start Studying
+                    </a>
+
+                </div>
+
+                <div class="hero-icon">
+                    <i class="ri-book-mark-line"></i>
+                </div>
+
+            </div>
+
+
+            <!-- STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-book-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Subjects</span>
+                        <h3 id="subjectCount">5</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-task-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Tasks</span>
+                        <h3 id="taskCount">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-checkbox-circle-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Completed</span>
+                        <h3 id="completedCount">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-file-text-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Notes</span>
+                        <h3 id="noteCount">0</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD GRID -->
+            <div class="dashboard-grid">
+
+
+                <!-- TASKS -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <span class="card-label">TODAY</span>
+                            <h3>Study Tasks</h3>
+                        </div>
+
+                        <a href="tasks.html">View all</a>
+
+                    </div>
+
+                    <div id="dashboardTasks" class="task-preview">
+
+                        <p class="empty-message">
+                            No tasks added yet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRESS -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <span class="card-label">OVERVIEW</span>
+                            <h3>Learning Progress</h3>
+                        </div>
+
+                        <a href="progress.html">Details</a>
+
+                    </div>
+
+                    <div class="progress-list">
+
+                        <div class="progress-item">
+
+                            <div class="progress-info">
+                                <span>JavaScript</span>
+                                <strong>80%</strong>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width:80%"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-item">
+
+                            <div class="progress-info">
+                                <span>Machine Learning</span>
+                                <strong>65%</strong>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width:65%"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-item">
+
+                            <div class="progress-info">
+                                <span>DBMS</span>
+                                <strong>50%</strong>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width:50%"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="quick-section">
+
+                <div class="section-heading">
+
+                    <span class="card-label">QUICK ACTIONS</span>
+
+                    <h2>What do you want to do?</h2>
+
+                </div>
+
+
+                <div class="quick-grid">
+
+                    <a href="assistant.html" class="quick-card">
+
+                        <div class="quick-icon">
+                            <i class="ri-lightbulb-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Study Topic</h3>
+                            <p>Learn a concept</p>
+                        </div>
+
+                        <i class="ri-arrow-right-line arrow"></i>
+
+                    </a>
+
+
+                    <a href="quiz.html" class="quick-card">
+
+                        <div class="quick-icon">
+                            <i class="ri-questionnaire-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Take Quiz</h3>
+                            <p>Test your knowledge</p>
+                        </div>
+
+                        <i class="ri-arrow-right-line arrow"></i>
+
+                    </a>
+
+
+                    <a href="tasks.html" class="quick-card">
+
+                        <div class="quick-icon">
+                            <i class="ri-add-circle-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Add Task</h3>
+                            <p>Plan your study</p>
+                        </div>
+
+                        <i class="ri-arrow-right-line arrow"></i>
+
+                    </a>
+
+
+                    <a href="notes.html" class="quick-card">
+
+                        <div class="quick-icon">
+                            <i class="ri-edit-box-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Create Note</h3>
+                            <p>Save important ideas</p>
+                        </div>
+
+                        <i class="ri-arrow-right-line arrow"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
+```

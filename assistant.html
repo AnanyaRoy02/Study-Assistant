@@ -1,0 +1,205 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Assistant</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="ri-book-open-line"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>StudyMate</h2>
+                <span>Study Assistant</span>
+            </div>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="index.html" class="nav-item">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="assistant.html" class="nav-item active">
+                <i class="ri-sparkling-2-line"></i>
+                <span>Study Assistant</span>
+            </a>
+
+            <a href="quiz.html" class="nav-item">
+                <i class="ri-questionnaire-line"></i>
+                <span>Quiz</span>
+            </a>
+
+            <a href="tasks.html" class="nav-item">
+                <i class="ri-task-line"></i>
+                <span>Tasks</span>
+            </a>
+
+            <a href="notes.html" class="nav-item">
+                <i class="ri-sticky-note-line"></i>
+                <span>Notes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <i class="ri-bar-chart-box-line"></i>
+                <span>Progress</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="page-container">
+
+            <div class="page-title">
+
+                <span class="card-label">STUDY HELPER</span>
+
+                <h1>Study Assistant 📚</h1>
+
+                <p>
+                    Enter a topic and get a simple explanation.
+                </p>
+
+            </div>
+
+
+            <div class="assistant-layout">
+
+
+                <div class="page-card">
+
+                    <div class="assistant-icon">
+                        <i class="ri-lightbulb-flash-line"></i>
+                    </div>
+
+                    <h2>What do you want to learn?</h2>
+
+                    <p class="muted">
+                        Choose a topic and select how you want it explained.
+                    </p>
+
+
+                    <div class="form-group">
+
+                        <label for="topic">
+                            Topic
+                        </label>
+
+                        <input
+                            type="text"
+                            id="topic"
+                            class="form-control"
+                            placeholder="e.g. JavaScript, machine learning">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="explanationType">
+                            Explanation Type
+                        </label>
+
+                        <select id="explanationType" class="form-control">
+
+                            <option value="simple">
+                                Explain Simply
+                            </option>
+
+                            <option value="detailed">
+                                Detailed Explanation
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button id="explainBtn" class="action-button">
+
+                        <i class="ri-sparkling-2-line"></i>
+
+                        Explain Topic
+
+                    </button>
+
+                </div>
+
+
+                <div class="page-card answer-card">
+
+                    <div class="answer-header">
+
+                        <div class="assistant-avatar">
+                            <i class="ri-book-open-line"></i>
+                        </div>
+
+                        <div>
+                            <span class="card-label">
+                                STUDY ASSISTANT
+                            </span>
+
+                            <h3>Explanation</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div id="answerBox" class="answer-box">
+
+                        <div class="empty-answer">
+
+                            <i class="ri-chat-smile-3-line"></i>
+
+                            <p>
+                                Your explanation will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../js/assistant.js"></script>
+
+</body>
+</html>
+```

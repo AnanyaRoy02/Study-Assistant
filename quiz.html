@@ -1,0 +1,199 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | StudyMate</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="ri-book-open-line"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>StudyMate</h2>
+                <span>Study Assistant</span>
+            </div>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="index.html" class="nav-item">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="assistant.html" class="nav-item">
+                <i class="ri-sparkling-2-line"></i>
+                <span>Study Assistant</span>
+            </a>
+
+            <a href="quiz.html" class="nav-item active">
+                <i class="ri-questionnaire-line"></i>
+                <span>Quiz</span>
+            </a>
+
+            <a href="tasks.html" class="nav-item">
+                <i class="ri-task-line"></i>
+                <span>Tasks</span>
+            </a>
+
+            <a href="notes.html" class="nav-item">
+                <i class="ri-sticky-note-line"></i>
+                <span>Notes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <i class="ri-bar-chart-box-line"></i>
+                <span>Progress</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="page-container">
+
+            <div class="page-title">
+
+                <span class="card-label">PRACTICE</span>
+
+                <h1>Test Your Knowledge 🧠</h1>
+
+                <p>
+                    Choose a subject and start a quiz.
+                </p>
+
+            </div>
+
+
+            <div id="quizStart" class="page-card quiz-start">
+
+                <div class="quiz-icon">
+                    <i class="ri-questionnaire-line"></i>
+                </div>
+
+                <h2>Start a Quiz</h2>
+
+                <p class="muted">
+                    Select a subject to test yourself.
+                </p>
+
+
+                <div class="form-group">
+
+                    <label for="quizSubject">
+                        Subject
+                    </label>
+
+                    <select id="quizSubject" class="form-control">
+
+                        <option value="javascript">
+                            JavaScript
+                        </option>
+
+                        <option value="html">
+                            HTML
+                        </option>
+
+                        <option value="css">
+                            CSS
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button id="startQuizBtn" class="action-button">
+                    Start Quiz
+                </button>
+
+            </div>
+
+
+            <div id="quizBox" class="page-card quiz-box hidden">
+
+                <div class="quiz-top">
+
+                    <span id="questionNumber">
+                        Question 1
+                    </span>
+
+                    <span id="scoreDisplay">
+                        Score: 0
+                    </span>
+
+                </div>
+
+
+                <h2 id="questionText">
+                    Question
+                </h2>
+
+
+                <div id="optionsContainer" class="options-container">
+                </div>
+
+
+                <button id="nextQuestionBtn" class="action-button">
+                    Next Question
+                </button>
+
+            </div>
+
+
+            <div id="quizResult" class="page-card quiz-result hidden">
+
+                <div class="result-icon">
+                    <i class="ri-trophy-line"></i>
+                </div>
+
+                <h2>Quiz Completed 🎉</h2>
+
+                <p id="finalScore">
+                    Your score is 0/0
+                </p>
+
+                <button id="restartQuizBtn" class="action-button">
+                    Try Again
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../js/quiz.js"></script>
+
+</body>
+</html>
+```

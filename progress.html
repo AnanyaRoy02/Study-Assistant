@@ -1,0 +1,237 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Progress | StudyMate</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="ri-book-open-line"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>StudyMate</h2>
+                <span>Study Assistant</span>
+            </div>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="index.html" class="nav-item">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="assistant.html" class="nav-item">
+                <i class="ri-sparkling-2-line"></i>
+                <span>Study Assistant</span>
+            </a>
+
+            <a href="quiz.html" class="nav-item">
+                <i class="ri-questionnaire-line"></i>
+                <span>Quiz</span>
+            </a>
+
+            <a href="tasks.html" class="nav-item">
+                <i class="ri-task-line"></i>
+                <span>Tasks</span>
+            </a>
+
+            <a href="notes.html" class="nav-item">
+                <i class="ri-sticky-note-line"></i>
+                <span>Notes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item active">
+                <i class="ri-bar-chart-box-line"></i>
+                <span>Progress</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="page-container">
+
+            <div class="page-title">
+
+                <span class="card-label">YOUR PERFORMANCE</span>
+
+                <h1>Learning Progress 📊</h1>
+
+                <p>
+                    Track your academic progress.
+                </p>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-task-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Tasks</span>
+                        <h3 id="totalTasks">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-checkbox-circle-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Completed</span>
+                        <h3 id="completedTasks">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-file-text-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Notes</span>
+                        <h3 id="totalNotes">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="ri-percent-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Task Progress</span>
+                        <h3 id="taskProgress">0%</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="page-card">
+
+                <span class="card-label">
+                    SUBJECT PROGRESS
+                </span>
+
+                <h2>My Learning</h2>
+
+                <br>
+
+
+                <div class="progress-list">
+
+                    <div class="progress-item">
+
+                        <div class="progress-info">
+                            <span>JavaScript</span>
+                            <strong>80%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:80%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-info">
+                            <span>Machine Learning</span>
+                            <strong>65%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:65%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-info">
+                            <span>DBMS</span>
+                            <strong>50%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:50%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-info">
+                            <span>Computer Networks</span>
+                            <strong>40%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:40%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../js/progress.js"></script>
+
+</body>
+</html>
+```

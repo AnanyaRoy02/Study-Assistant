@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasks | StudyMate</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="ri-book-open-line"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>StudyMate</h2>
+                <span>Study Assistant</span>
+            </div>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="index.html" class="nav-item">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="assistant.html" class="nav-item">
+                <i class="ri-sparkling-2-line"></i>
+                <span>Study Assistant</span>
+            </a>
+
+            <a href="quiz.html" class="nav-item">
+                <i class="ri-questionnaire-line"></i>
+                <span>Quiz</span>
+            </a>
+
+            <a href="tasks.html" class="nav-item active">
+                <i class="ri-task-line"></i>
+                <span>Tasks</span>
+            </a>
+
+            <a href="notes.html" class="nav-item">
+                <i class="ri-sticky-note-line"></i>
+                <span>Notes</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <i class="ri-bar-chart-box-line"></i>
+                <span>Progress</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="page-container">
+
+            <div class="page-title">
+
+                <span class="card-label">PRODUCTIVITY</span>
+
+                <h1>Study Tasks 📋</h1>
+
+                <p>
+                    Organize everything you need to study.
+                </p>
+
+            </div>
+
+
+            <div class="page-card">
+
+                <h2>Add New Task</h2>
+
+                <br>
+
+                <div class="form-group">
+
+                    <label for="taskInput">
+                        Task
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        class="form-control"
+                        placeholder="e.g. Complete JavaScript DOM">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="taskSubject">
+                        Subject
+                    </label>
+
+                    <select id="taskSubject" class="form-control">
+
+                        <option>JavaScript</option>
+                        <option>Machine Learning</option>
+                        <option>DBMS</option>
+                        <option>Computer Networks</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <button id="addTaskBtn" class="action-button">
+                    <i class="ri-add-line"></i>
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <div class="page-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            MY TASKS
+                        </span>
+
+                        <h2>Task List</h2>
+
+                    </div>
+
+                    <span id="taskSummary">
+                        0 tasks
+                    </span>
+
+                </div>
+
+
+                <div id="taskList" class="task-list">
+
+                    <p class="empty-message">
+                        No tasks added yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../js/tasks.js"></script>
+
+</body>
+</html>
+
