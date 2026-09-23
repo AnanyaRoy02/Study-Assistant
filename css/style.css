@@ -971,3 +971,47 @@ button {
     background: none;
     cursor: pointer;
 }
+/* notes saved css */
+/* NOTES */
+
+.notes-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.note-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-icon {
+    font-size: 22px;
+    color: #3b82f6;
+}
+
+.note-card h3 {
+    margin: 8px 0;
+}
+
+.note-card p {
+    margin: 8px 0;
+    color: #4b5563;
+}
+
+.note-subject {
+    color: #3b82f6;
+    font-size: 14px;
+}
+
+.note-card small {
+    color: #9ca3af;
+}
