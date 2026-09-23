@@ -82,9 +82,13 @@ function displayTasks() {
         checkButton.className = "check-button";
 
         if (task.completed) {
-            checkButton.innerHTML =
-                '<i class="ri-check-line"></i>';
+          checkButton.innerHTML = '<i class="ri-check-line"></i>';
+          checkButton.classList.add("completed");
+        } 
+        else {
+          checkButton.innerHTML = "";
         }
+        
 
         checkButton.addEventListener("click", function () {
             toggleTask(task.id);
